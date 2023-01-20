@@ -1,0 +1,24 @@
+.navbar {
+    width: 100vw;
+    display: flex;
+    height: 12.5rem;
+    align-items: center;
+    justify-content: center;
+    background: var(--gray-700);
+}
+
+.createTodoContainer {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    max-width: 40rem;
+    align-items: center;
+    margin-top: -1.75rem;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 87.5%
+    }
+}

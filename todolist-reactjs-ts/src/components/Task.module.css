@@ -1,0 +1,69 @@
+.taskContent {
+    gap: 1rem;
+    display: grid;
+    padding: 1rem;
+    align-items: center;
+    border-radius: 0.5rem;
+    margin-bottom: 0.75rem; 
+    background: var(--gray-400);
+    grid-template-columns: 1.5rem 1fr 1.5rem;
+}
+
+.taskContentChecked {
+    gap: 1rem;
+    display: grid;
+    padding: 1rem;
+    align-items: center;
+    border-radius: 0.5rem;
+    margin-bottom: 0.75rem; 
+    background: var(--gray-500);
+    grid-template-columns: 1.5rem 1fr 1.5rem;
+}
+
+input[type="checkbox"] {
+    outline: none;
+    width: 1.25rem;
+    height: 1.25rem;
+    cursor: pointer;
+    appearance: none;
+    border-radius: 50%;
+    color: var(--white);
+    font-size: 0.875rem;
+    vertical-align: middle;
+    background-color: var(--gray-400);
+    border: 2px solid var(--blue-100);
+}
+
+input[type="checkbox"]:hover {
+    background: var(--blue-500);
+} 
+
+input[type="checkbox"]:checked {
+    background: var(--purple-500);
+    border: 2px solid var(--purple-500);
+} 
+
+button {
+    border: 0;
+    padding: 2px;
+    display: flex;
+    cursor: pointer;
+    border-radius: 4px;
+    align-items: center;
+    color: var(--gray-300);
+    background: transparent;
+}
+
+button:hover {
+    color: var(--red-200);
+    background: var(--gray-500);
+}
+
+.descriptionOfTasksThatNotBeenDone { 
+    color: var(--gray-100);
+}
+
+.descriptionOfTasksThatHasBeenDone {
+    color: var(--gray-300);
+    text-decoration: line-through;
+}

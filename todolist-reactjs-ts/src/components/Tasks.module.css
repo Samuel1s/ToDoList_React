@@ -1,0 +1,77 @@
+.wrapper {
+    gap: 1rem;
+    display: grid;
+    margin: 0 auto;
+    align-items: center;
+    margin-bottom: 4rem;
+    grid-template-columns: 638px 1fr;
+}
+
+.wrapper button[type="submit"] {
+    border: 0;
+    gap: 0.5rem;
+    display: flex;
+    padding: 1rem;
+    cursor: pointer;
+    font-weight: 700;
+    align-items: center;
+    font-size: 0.875rem;
+    color: var(--white);
+    border-radius: 0.5rem;
+    justify-content: center;
+    background-color: var(--blue-500);
+    transition: background-color 0.1s;
+}
+
+.wrapper button[type="submit"]:hover {
+    background-color: var(--blue-500);
+}
+
+.wrapper button[type=submit]:not(:disabled):hover {
+    background-color: var(--blue-100);
+}
+
+.wrapper button[type=submit]:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.wrapper input {
+    border: 0;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    color: var(--gray-300);
+    background: var(--gray-500);
+}
+
+.taskStatus {
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    justify-content: space-between;
+}
+
+.createdTasks {
+    font-weight: 700;
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--blue-100);
+}
+
+.doneTasks {
+    font-weight: 700;
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--purple-300);
+}
+
+.counter {
+    font-weight: 700;
+    font-size: 0.75rem;
+    border-radius: 10rem;
+    color: var(--gray-200);
+    padding: 0.125rem 0.5rem;
+    background: var(--gray-400);
+}

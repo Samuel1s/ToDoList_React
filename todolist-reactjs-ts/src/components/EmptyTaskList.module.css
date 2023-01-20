@@ -1,0 +1,22 @@
+.contentEmptyTaskList {
+   width: 100%;
+   margin: 0 auto;
+   text-align: center;
+   padding-top: 2.5rem;
+   color: var(--gray-300);
+   border-top: 1px solid var(--gray-400);
+}
+
+.contentEmptyTaskList img {
+    margin-bottom: 1rem;
+}
+
+.taskAlert {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.taskAlert > p:first-child {
+    font-weight: 700;
+    font-size: 1.125rem;
+}
